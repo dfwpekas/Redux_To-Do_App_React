@@ -17,9 +17,9 @@ const ListTask = () => {
     return (
         <div>
             <div>
-                <button onClick={() => dispatch(filterTasks('all'))}>All</button>
-                <button onClick={() => dispatch(filterTasks('done'))}>Done</button>
-                <button onClick={() => dispatch(filterTasks('not'))}>Not Done</button>
+                <button onClick={() => dispatch(filterTasks('all'))} className='filter-button'>All</button>
+                <button onClick={() => dispatch(filterTasks('done'))} className='filter-button'>Done</button>
+                <button onClick={() => dispatch(filterTasks('not'))} className='filter-button'>Not Done</button>
             </div>
             <ul className='task-list'>
                 {filteredTasks.map((task) => ( <li>
